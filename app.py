@@ -19,10 +19,10 @@ def predict():
     prediction = model.predict(final_features)
 
     output = round(prediction[0], 2)
-    if(output==1)
+    if(output==1):
         {result=Positive}
       
-    else
+    else:
        {result=Negative} 
 
     return render_template('index.html', prediction_text='Result: $ {}'.format(result))
